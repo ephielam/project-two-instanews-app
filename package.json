@@ -1,0 +1,36 @@
+{
+  "name": "project-two-instanews-app",
+  "version": "1.0.0",
+  "description": "Instanews App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ephielam/project-two-instanews-app.git"
+  },
+  "keywords": [
+    "instanews",
+    "insta",
+    "news",
+    "api"
+  ],
+  "author": "Ephie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ephielam/project-two-instanews-app/issues"
+  },
+  "homepage": "https://github.com/ephielam/project-two-instanews-app#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-eslint": "^4.0.2",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
