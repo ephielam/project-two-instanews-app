@@ -3,9 +3,9 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var eslint = require('gulp-eslint');
-var sass = require("gulp-sass"),
- autoprefixer = require("gulp-autoprefixer"),
- cssnano = require("gulp-cssnano");
+var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
+var cssnano = require("gulp-cssnano");
 var concat = require("gulp-concat");
 //image optimisation and resizing npms
 // var image = require("gulp-image");
