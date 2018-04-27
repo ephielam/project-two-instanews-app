@@ -1,10 +1,23 @@
-$brand-font: 'Open Sans', sans-serif;
+//fonts
+@font-face {
+    font-family:'OpenSans-Light';
+    src:url('../../assets/fonts/OpenSans-Light.ttf');
+}
+// don't think italic is used!
+// @font-face {
+//     font-family:'OpenSans-LightItalic';
+//     src:url('../../assets/fonts/OpenSans-LightItalic.ttf');
+// }
+
+// variables
+$brand-font: 'OpenSans-Light';
 $base-font-size: 16px;
 $base-color: #ffffff;
 $grey-color: #c2c2c2;
 $tablet-width: 600px;
 $desktop-width: 1000px;
 
+// mixins
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;
@@ -16,7 +29,7 @@ $desktop-width: 1000px;
   }
 }
 
-
+//styles
 body{
   background-color: #000;
   font-family: $brand-font;
@@ -25,6 +38,7 @@ body{
   text-align: center;
 }
 
+// header
 header {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +53,12 @@ header {
       @include tablet {
          flex-basis: 50%;
       }
+      @include desktop {
+         flex-basis: 10%;
+      }
+      img{
+        padding: 2rem;
+      }
   }
 
   div {
@@ -47,12 +67,33 @@ header {
          flex-basis: 50%;
          text-align: left;
     }
+    @include desktop {
+       flex-basis: 90%;
+    }
+    select {
+      margin: 1rem 0;
+      font-family: 'OpenSans-Light'
+    }
   }
 }
 
+// stories grid
+.stories{
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    flex-basis: 100%;
+    @include tablet {
+         flex-basis: 25%;
+    }
+  }
+}
+
+// footer
 footer {
   p{
     color: #c2c2c2;
+    padding: 1rem;
   }
   span{
     text-transform: uppercase;
@@ -61,12 +102,3 @@ footer {
     text-align: left;
   }
 }
-
-
-// desktop styling example
-// li {
-//    flex: 0 1 100%;
-//    @include desktop {
-//       flex: 0 1 50%;
-//    }
-// }
