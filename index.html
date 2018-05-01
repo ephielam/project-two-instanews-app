@@ -10,10 +10,13 @@
     <title>Instanews</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="logo-section">
       <h1><img class ="nyt-logo" src="assets/img/nyt-logo.svg"
         alt="NYT Logo"></h1>
-      <div class="choose">
+      </div>
+      <div class="select-section">
+        <form class="select-form" action="#" method="post">
         <h2>Choose a section:</h2>
         <select class="dropdown">
           <option value="">Sections...</option>
@@ -21,25 +24,20 @@
           <option value="arts">Arts</option>
           <option value="business">Business</option>
           <option value="sports">Sports</option>
-          <option value="5">Technology</option>
-          <option value="6">Fashion</option>
+          <option value="technology">Technology</option>
+          <option value="fashion">Fashion</option>
         </select>
+      </form>
       </div>
     </header>
 
-    <div class="stories">
-      <div class="story-01"></div>
-      <div class="story-02"></div>
-      <div class="story-03"></div>
-      <div class="story-04"></div>
-      <div class="story-05"></div>
-      <div class="story-06"></div>
-      <div class="story-07"></div>
-      <div class="story-08"></div>
-      <div class="story-09"></div>
-      <div class="story-10"></div>
-      <div class="story-11"></div>
-      <div class="story-12"></div>
+    <div class="stories-container">
+      <div class="stories">
+      <img class="ajax-loader" src="assets/img/ajax-loader.gif" alt="Loading wheel"></div>
+      <ul>
+        <li class="dump"></li>
+<!--    dump articles here -->
+      </ul>
     </div>
 
     <footer>

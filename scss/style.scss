@@ -48,7 +48,7 @@ header {
        flex-wrap:nowrap;
   }
 
-  h1{
+  .logo-section{
     flex-basis: 100%;
       @include tablet {
          flex-basis: 50%;
@@ -61,7 +61,7 @@ header {
       }
   }
 
-  div {
+  .select-section {
     flex-basis: 100%;
     @include tablet {
          flex-basis: 50%;
@@ -78,13 +78,18 @@ header {
 }
 
 // stories grid
-.stories{
+.stories-container{
+  .ajax-loader {
+  display:none;
+  }
+  ul{
   display: flex;
   flex-wrap: wrap;
-  div {
-    flex-basis: 100%;
+  li {
+    flex-basis: 25%;
     @include tablet {
          flex-basis: 25%;
+     }
     }
   }
 }
